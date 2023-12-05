@@ -1,0 +1,129 @@
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+
+  display: flex;
+  flex-direction: column;
+  
+  font-family: Montserrat;
+}
+
+main {
+  width: 600px;
+  height: 454px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  width: 300px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+section.right {
+  padding: 32px;
+}
+
+.product {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+
+.product-name {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgb(32, 32, 32);
+  margin: 20px 0 23px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.pricing {
+  margin: 29px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  font-family: Fraunces;
+  font-size: 32px;
+  margin-right: 20px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.actual-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+
+button {
+  font-family: Montserrat;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+button:active {
+  background-color: hsl(158, 36%, 17%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin-bottom: 130px;
+  }
+
+  main {
+    width: 360px;
+    height: 700px;
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-img {
+    width: 360px;
+    border-radius: 10px 10px 0 0;
+    content: url("/images/image-product-mobile.jpg") !important;
+  }
+};
